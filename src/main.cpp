@@ -1,8 +1,8 @@
-#include <iostream>
-using namespace std;
+#include "app.hpp"
 
 int main(int argc, char** argv) {
-
-	cout << "hey";
+	std::unique_ptr<app> getgud (new app);
+	getgud->go();
+	getgud->close();
 	return EXIT_SUCCESS;
 }
